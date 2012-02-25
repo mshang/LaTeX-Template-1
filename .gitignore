@@ -1,0 +1,8 @@
+# .gitignore for LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.pdf
+*.gz
+*.toc
