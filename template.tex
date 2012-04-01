@@ -32,6 +32,8 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
+\usepackage{hyperref} % Links
+\usepackage{microtype} % Hanging punctuation and other improvements
 \usepackage{cite}
 \usepackage{fixltx2e}
 \usepackage{textcomp}
@@ -43,11 +45,14 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \theoremstyle{definition}
-\newtheorem*{ex}{Example}
+\newtheorem{ex}{Example}
 \theoremstyle{plain}
-\newtheorem*{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\usepackage{mathtools}
 
+\newcommand{\mbf}[1]{\ifmmode \mathbf{#1}\else $\mathbf{#1}$\fi}
 \newcommand{\mbb}[1]{\ifmmode \mathbb{#1}\else $\mathbb{#1}$\fi}
+\newcommand{\mdot}[1]{\ifmmode \dot{#1}\else $\dot{#1}$\fi}
 
 %\end{header}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
